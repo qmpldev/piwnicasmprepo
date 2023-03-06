@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff7f0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10vw;
+    height: 10vh;
+    background-color: #fff7f0;
+    align-items: center;
+    font-family: dugas_proRgultraCn;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+nav .nick{
+    font-size: 8vh;
+}
+nav .nick img{
+    height: 7.5vh;
+}
+nav .options{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    font-size: 8vh;
+}
+nav .options > p{
+    cursor: pointer;
+}
+nav .options > p:hover{
+    color: #ff0088;
+}
+
+main{
+    margin: 0 10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff7f0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.container .left-img{
+    width: 70%;
+    background-image: url(./media/piwnica\ smp2.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid black;
+}
+.container .right-desc{
+    font-family: 'Poppins', sans-serif;    
+    width: 30%;
+    background-color: #feefe3;
+    border: 1px solid black;
+    padding: 50px;
+}
+.container .right-desc p{
+    padding-top: 20px;
+}
+.container .right-desc h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.container .right-desc ul{
+    list-style: none;
+}
+.container .right-desc ul > li{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.separator{
+    margin: 5vh 10vw;
+    height: 10vh;
+    border: 1px solid black;
+    font-family: dugas_proRgultraCn;
+    font-size: 8vh;
+    display: flex;
+    background-color: #feefe3;
+    align-items: center;
+    justify-content: center;
+}
+.separator .login{
+    position: absolute;
+    right: 12vw;
+    cursor: pointer;
+}
+
+.artykuly{
+    font-family: 'Poppins', sans-serif;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    margin: 0vh 10vw;
+}
+.artykul{
+    height: 70vh;
+    background-color: #feefe3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.artykul:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+.artykul .opis{
+    padding: 5%;
+    height: 20%;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.artykulimg{
+    height: 80%;
+    background-image: url(./media/SkatePark.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container2{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    margin-bottom: 5vh;
+}
+
+.container2 .right-img{
+    width: 50%;
+    background-image: url(./media/modpack.png);
+    background-size: cover;
+    border: 1px solid black;
+}
+.container2 .left-desc{
+    font-family: 'Poppins', sans-serif;    
+    width: 50%;
+    background-color: #feefe3;
+    border: 1px solid black;
+    padding: 50px;
+}
+.container2 .left-desc p{
+    padding-top: 20px;
+}
+.container2 .left-desc h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.container2 .left-desc ul{
+    list-style: none;
+}
+.container2 .left-desc ul > li{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.container2 .right-img2{
+    width: 50%;
+    background-image: url(https://pbs.twimg.com/media/FH1qEtuUYAMewJ0.jpg:large);
+    background-size: cover;
+    border: 1px solid black;
+}
+.container2 .left-desc2{
+    font-family: 'Poppins', sans-serif;    
+    width: 50%;
+    background-color: #feefe3;
+    border: 1px solid black;
+    padding: 50px;
+}
+.container2 .left-desc2 p{
+    padding-top: 20px;
+}
+.container2 .left-desc2 h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.container2 .left-desc2 ul{
+    list-style: none;
+}
+.container2 .left-desc2 ul > li{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.ideas{
+    font-family: 'Poppins', sans-serif;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    margin: 0vh 10vw;
+}
+
+.idea{
+    height: 70vh;
+    background-color: #feefe3;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.idea .opis{
+    padding: 5%;
+    height: 20%;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ideaimg{
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
