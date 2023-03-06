@@ -44,10 +44,10 @@
     </div>
     <div class="artykuly">
         <?php
-        $servername = "localhost";
-        $username = "portfolio";
-        $password = "123";
-        $dbname = "piwnicasmp";
+        $servername = "piwnicasmpphp-server.mysql.database.azure.com";
+        $username = "remewjtzik";
+        $password = "67N236P5E40X473H$";
+        $dbname = "piwnicasmpphp-database";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
