@@ -43,38 +43,43 @@
         <img src="./media/plus.svg" class="login">
     </div>
     <div class="artykuly">
-        <?php
-        $servername = "piwnicasmpphp-server.mysql.database.azure.com";
-        $username = "remewjtzik";
-        $password = "67N236P5E40X473H$";
-        $dbname = "piwnicasmpphp-database";
-
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $sql = "SELECT Tytul, Opis, Cena, Link, img, kolor FROM przepustki ORDER BY ID DESC LIMIT 3";
-        $result = $conn->query($sql);
-
-        if ($result->num_rows > 0) {
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-                echo "
-                <a href=\"$row[Link]\" class=\"link\" target=\"popup\" onclick=\"window.open('$row[Link]','name','width=480,height=848')\">
-                <div class=\"artykul\">
-                    <div class=\"artykulimg\" style=\"background-image: url($row[img]); border: 10px solid $row[kolor];\">
+        
+                <a href="" class="link" target="popup" onclick="window.open('','name','width=480,height=848')">
+                <div class="artykul">
+                    <div class="artykulimg" style="background-image: url(https://assets.reedpopcdn.com/minecraft-legends-strategia-zapowiedz-headline.jpg/BROK/resize/1200x1200>/format/jpg/quality/70/minecraft-legends-strategia-zapowiedz-headline.jpg); border: 10px solid #8E44AD ;">
                         
                     </div>
-                    <div class=\"opis\">".
-                        "<h2>$row[Tytul]</h2>
-                        <p>$row[Opis]</p>
-                        <h2 style=\"color: rgb(56, 56, 56);\">Cena: $row[Cena]€ (miesięcznie)</h2>
+                    <div class="opis"><h2>VIP</h2>
+                        <p>- Dostęp do serwera</p>
+                        <h2 style="color: rgb(56, 56, 56);">Cena: 2€ (miesięcznie)</h2>
                     </div>
                 </div>
                 </a>                
-                ";
-            }
-          } 
-        ?>
-    </div>
+                
+                <a href="https://ko-fi.com/summary/147c578e-1139-482e-8a49-247ab4b43b3a" class="link" target="popup" onclick="window.open('https://ko-fi.com/summary/147c578e-1139-482e-8a49-247ab4b43b3a','name','width=480,height=848')">
+                <div class="artykul">
+                    <div class="artykulimg" style="background-image: url(https://gaming.komputronik.pl/wp-content/uploads/2022/11/jak-zrobic-przedmiot-w-minecraft-768x432.jpg); border: 10px solid #1ABC9C;">
+                        
+                    </div>
+                    <div class="opis"><h2>Standard</h2>
+                        <p>- Dostęp do serwera</p>
+                        <h2 style="color: rgb(56, 56, 56);">Cena: 1€ (miesięcznie)</h2>
+                    </div>
+                </div>
+                </a>                
+                
+                <a href="https://ko-fi.com/summary/5d751789-ab2f-42db-a572-a2dfe1c099a0" class="link" target="popup" onclick="window.open('https://ko-fi.com/summary/5d751789-ab2f-42db-a572-a2dfe1c099a0','name','width=480,height=848')">
+                <div class="artykul">
+                    <div class="artykulimg" style="background-image: url(https://sm.ign.com/t/ign_pl/screenshot/default/80_ejv1.1280.jpg); border: 10px solid #3498DB ;">
+                        
+                    </div>
+                    <div class="opis"><h2>Bozo</h2>
+                        <p>- Dostęp do serwera</p>
+                        <h2 style="color: rgb(56, 56, 56);">Cena: 0.5€ (miesięcznie)</h2>
+                    </div>
+                </div>
+                </a>                
+                    </div>
     <div class="separator" id="modpack">
         <p>Modpack</p>
     </div>
