@@ -336,7 +336,10 @@ main{
         margin-bottom: 5vh;
     }
     
-    .container h3,ul{
+    .container h3{
+        display: none;
+    }
+    .container ul{
         display: none;
     }
 
