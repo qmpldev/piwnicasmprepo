@@ -113,7 +113,25 @@ main{
     cursor: pointer;
     transition: 0.3s ease;
 }
-
+.mobile{
+    margin: 0vh 10vw;
+    display: none;
+    margin-top: 5vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.mobile li{
+    font-family: 'Poppins', sans-serif;  
+    list-style: none;
+    background-color: #feefe3;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .artykul:hover{
     transform: scale(1.02);
     transition: 0.3s ease;
@@ -237,3 +255,221 @@ main{
     text-decoration: none;
     color: black;
 }
+
+@media only screen and (max-width: 1150px) {
+    .mobile{
+        margin: 0vh 10vw;
+        margin-top: 5vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .mobile li{
+        font-family: 'Poppins', sans-serif;  
+        list-style: none;
+        background-color: #feefe3;
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav#header{
+        display: none;
+        justify-content: space-between;
+        margin: 0 10vw;
+        height: 10vh;
+        background-color: #fff7f0;
+        align-items: center;
+        font-family: dugas_proRgultraCn;
+        margin-bottom: 3vh;
+        margin-top: 3vh;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 5vh;
+    }
+    .container .left-img{
+        height: 30vh;
+        width: 100%;
+        background-image: url(./media/piwnica\ smp2.png);
+        background-position: center;
+        background-size: cover;
+        border: 1px solid black;
+    }
+
+    .container .right-desc{
+        font-family: 'Poppins', sans-serif;    
+        width: 100%;
+        height: 30%;
+        background-color: #feefe3;
+        border: 1px solid black;
+        padding: 50px;
+    }
+    .container .right-desc p{
+        padding-top: 20px;
+    }
+    
+    .container .right-desc h3{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .container .right-desc ul{
+        list-style: none;
+    }
+    .container .right-desc ul > li{
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+    }
+    .container2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 5vh;
+    }
+    
+    .container h3,ul{
+        display: none;
+    }
+
+    .container2 .right-img{
+        width: 100%;
+        height: 0vh;
+        background-image: url(./media/modpack.png);
+        background-size: cover;
+        border: 1px solid black;
+    }
+    .container2 .left-desc{
+        font-family: 'Poppins', sans-serif;    
+        width: 100%;
+        background-color: #feefe3;
+        border: 1px solid black;
+        padding: 50px;
+    }
+    .container2 .left-desc p{
+        padding-top: 20px;
+    }
+    .container2 .left-desc h3{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .container2 .left-desc ul{
+        list-style: none;
+    }
+    .container2 .left-desc ul > li{
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+    }
+    
+    .container2 .right-img2{
+        width: 100%;
+        height: 15vh;
+        background-image: url(https://pbs.twimg.com/media/FH1qEtuUYAMewJ0.jpg:large);
+        background-size: cover;
+        border: 1px solid black;
+    }
+    .container2 .left-desc2{
+        font-family: 'Poppins', sans-serif;    
+        width: 100%;
+        background-color: #feefe3;
+        border: 1px solid black;
+        padding: 50px;
+    }
+    .container2 .left-desc2 p{
+        padding-top: 20px;
+    }
+    .container2 .left-desc2 h3{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .container2 .left-desc2 ul{
+        list-style: none;
+    }
+    .container2 .left-desc2 ul > li{
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+    }
+    .ideas{
+        font-family: 'Poppins', sans-serif;  
+        display: flex;
+        flex-direction: column;
+        margin: 0vh 10vw;
+        gap: 5vh;
+    }
+    
+    .idea{
+        height: 20vh;
+        width: 100%;
+        background-color: #feefe3;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+    }
+    
+    .idea .opis{
+        padding: 5%;
+        height: 40%;
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .ideaimg{
+        height: 60%;
+        background-size: cover;
+        background-position: center;
+    }
+    .artykuly{
+        font-family: 'Poppins', sans-serif;  
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+        margin: 0vh 10vw;
+    }
+    .artykul{
+        height: 50vh;
+        width: 100%;
+        background-color: #feefe3;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    .artykul:hover{
+        transform: scale(1.02);
+        transition: 0.3s ease;
+    }
+    
+    .artykul .opis{
+        padding: 5%;
+        height: 20%;
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .artykulimg{
+        height: 80%;
+        background-image: url(./media/SkatePark.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    nav p{
+        font-size: 80%;
+    }
+  }
